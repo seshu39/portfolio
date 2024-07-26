@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SESHAPRIYA</title>
+  <style>
+    
+    @keyframes slidein-navbar {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slidein-content {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slidein-objective {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slidein-aboutme {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 0;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+
+    body {
+      background: #f4f4f4;
+      /* background-color: #efeaf0; */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #333;
+    }
+    
+    /* .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #B692C2;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: slidein-navbar 1s ease-out, fadein 1s ease-out;
+    }
+    .navbar .first {
+      margin-left: auto;
+      font-weight: 300;
+      font-size: 20px;
+      color: #ffffff;
+      text-decoration: none; 
+    }
+   
+    .navbar .nav1{
+      margin-left: 100px;
+      font-weight: 300;
+      font-size: 20px;
+      color: #ffffff;
+    } */
+    .Image1 {
+      width: 300px;
+      border-radius: 50%;
+      display: block;
+      margin-right: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
+    .sidenav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #B692C2;
+    border-bottom: 1px solid #e0e0e0; /* Light grey border for separation */
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5d2c7d;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    /* font-weight: 200px; */
+    color: #333; /* Dark grey text for links */
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.sidenav a:hover {
+    color:  #5d2c7d; /* Subtle blue on hover */
+    border-bottom: 2px solid  #5d2c7d;
+}
+
+.sidenav a img.icon, .sidenav a img.icon1 {
+    margin-right: 8px;
+    width: 24px; /* Adjust icon size */
+   
+}
+    .helo {
+      font-size: 50px;
+      /* color: #754496; */
+      color: #5d2c7d;
+      /* color: #3a1354; */
+    }
+    .helos {
+      font-size: 50px;
+      /* color: #754496; */
+      color: #5d2c7d;
+      /* color: #3a1354; */
+    }
+    .quote {
+      font-size: 30px;
+      margin-top: 20px;
+      color:black;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      margin-top: 140px;
+      animation: slidein-content 1s ease-out, fadein 1s ease-out;
+    }
+    .career {
+      background-color: #ffffff; 
+      /* background-color:  #B692C2; */
+      border: 0px solid #ddd; 
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      text-align: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      color: #5d2c7d;
+      animation: slidein-aboutme 1s ease-out, fadein 1s ease-out;
+    }
+    .obj {
+      margin-left: 80px;
+      margin-top: 50px;
+      font-size: 25px;
+      color: #444;
+      animation: slidein-objective 1s ease-out, fadein 1s ease-out;
+    }
+    .cal {
+      text-align: left;
+    }
+    .cal1 {
+      text-align: center;
+    }
+    /* footer {
+      background-color: #4a4a4a; 
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      margin-top: 100px;
+      animation: slidein 2s ease-out, fadein 2s ease-out;
+    }
+    footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    footer .footer-content p {
+      margin: 10px 0;
+    }
+    footer .footer-content a {
+      color: #ffffff;
+      text-decoration: none; 
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    footer .footer-content a:hover {
+      color: #d1d1d1; 
+    } */
+    
+    .footer {
+      background-color: #C8ACD6;
+            color: white;
+            padding: 20px 40px;
+            height: 10vh;
+            width:95%;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            left: 20px;
+        }
+        .footer .logo {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+        .footer .info-container {
+          display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 100px; 
+    justify-content: center; 
+           
+            
+           
+        }
+        .footer p {
+            margin: 0 20px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+        }
+        .footer a {
+          color: #5d2c7d;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    .aboutme {
+      background-color: #ffffff; 
+      border: 1px solid #ddd; 
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      text-align: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      color: #5d2c7d;
+      animation: slidein-aboutme 1s ease-out, fadein 1s ease-out;
+    }
+    .obj1 {
+      margin-left: 80px;
+      margin-top: 30px;
+      font-size: 25px; 
+      color: #444;
+      text-align: center;
+      animation: slidein-aboutme 1s ease-out, fadein 1s ease-out;
+    }
+    .container{
+      background-color: #decde1;
+      border: 0px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1000px;
+      text-align: center;
+      margin-left: 120px;
+      margin-top: 100px;
+      animation: slidein-objective 1s ease-out, fadein 1s ease-out;
+      
+    }
+    .contains {
+      background-color: #decde1;
+      border: 0px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1000px;
+      text-align: center;
+      margin-left: 120px;
+      margin-top: 50px;
+      animation: slidein-objective 1s ease-out, fadein 1s ease-out;
+     
+    }
+    .resume, .soft {
+      background-color: #fff;
+      border: 0px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+      height: 50vh;
+      animation: slidein-objective 1s ease-out, fadein 1s ease-out;
+    }
+    .resume {
+      margin-left: 120px;
+      width: 300px;
+      text-align: left;
+      background-color: #C8ACD6;
+      
+      transition: background-color 2s,width 7s 1s,height 5s linear;
+      
+    }
+    
+    .soft {
+      margin-left: 20px;
+      width: 300px;
+      top: 10vh;
+      text-align: left;
+      /* background-color: #b1abab; */
+      background-color: #C8ACD6;
+      transition: background-color 2s,width 20s 1s,height 5s linear;
+    }
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 50px;
+    }
+    .skills-container .resume,
+    .skills-container .soft {
+      margin: 10px;
+    }
+    .res-container{
+      background-color: #decde1;
+      border: 0px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1000px;
+      text-align: center;
+      margin-left: 120px;
+      margin-top: 50px;
+      animation: slidein-objective 1s ease-out, fadein 1s ease-out;
+     
+    }
+    .res{
+      background-color: #ffffff; 
+      border: 1px solid #ddd; 
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      text-align: center;
+      margin-left: 100px;
+      margin-top: 50px;
+      color: #333;
+      animation: slidein-aboutme 1s ease-out, fadein 1s ease-out;
+    }
+
+    .resume:hover{
+      background-color: #ede8e8;
+      width: 300px;
+      height: 300px;
+    }
+    .soft:hover{
+      background-color: #ede8e8;
+      width: 300px;
+      height: 300px;
+    }
+    .navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+    color: white;
+    margin: 0;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+    color: white;
+    margin: 0;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+    color: white;
+    margin: 0;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+} */
+
+/* .navbar ul li a:hover {
+    text-decoration: underline;
+} */
+
+.content-section {
+    padding: 2rem;
+    margin-left: 10px;
+    
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.education-container {
+    background-color: #decde1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 990px;
+    margin-left: 70px;
+}
+
+.education-entry {
+    margin-bottom: 2rem;
+}
+
+.education-entry h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.education-entry p {
+    margin: 0.5rem 0;
+}
+.certification-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    /* border-bottom: 2px solid #50e3c2; */
+    padding-bottom: 0.5rem;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.certification-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cert-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    color: #777;
+}
+
+.page-footer {
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+.profile-container {
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+   margin-left: 200px;
+   margin-bottom: 50px;
+   margin-top: 100px;
+}
+
+.profile-header {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* .section-titles {
+    font-size: 1.75em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    text-align: left;
+    color: #333;
+    
+} */
+
+.profile-experience-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #333;
+    background: #fafafa;
+    border-radius: 5px;
+    position: relative;
+}
+
+.profile-experience-item::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.profile-year-role {
+    flex: 0 0 150px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.profile-year {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-role {
+    display: block;
+    color: #777;
+}
+
+.profile-details {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+   
+}
+.profile-details p{
+    margin-top: 0px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-details h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+
+
+.profile-education-item {
+    margin-bottom: 20px;
+}
+
+.profile-education-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* .profile-education-item p {
+    color: #555;
+} */
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  
+  <div class="sidenav">
+    <h1>SESHAPRIYA</h1>
+    
+ <b> <a href="#about" >Home</a>
+   <a href="#he">About</a>
+    <a href="#her">Skills</a>
+    <a href="#education">Education Background</a>
+    <a href="#certification">Certificates</a>
+    <a href="#projects">Projects</a></b>
+
+    <!-- <a href="https://www.linkedin.com/in/santhiya-v-77a850258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" class="icon1"> LinkedIn
+    </a>
+    <a href="https://github.com/seshu39">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="icon"> GitHub
+    </a> -->
+    </div>
+  
+  <div class="content" id="#about">
+    <!-- <img src="C:\Users\seshu\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2024-07-23 at 22.09.11_8053f082.jpg" alt="new1" class="Image1"> -->
+    <img src="C:\Users\seshu\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2024-07-24 at 20.40.34_2193a145.jpg" alt="new1" class="Image1">
+    <div>
+      <h1 class="helo">HELLO!!!</h1>
+      <h1 class="helos">Here's who I am & what I do!!</h1>
+      <h1 class="quote">"The future belongs to those who believe in the beauty of their dreams."</h1>
+    </div>
+    
+  </div>
+
+  <div class="contains">
+    <h1 class="career">CAREER OBJECTIVE</h1>
+    <p><h2 class="obj">"Ambitious college student pursuing a degree in Electrical
+      Engineering eager to apply coursework knowledge in a hands-on software development internship. Seeking an opportunity to
+      contribute fresh perspectives, grow technical skills, and learn
+      alongside experienced professionals."</h2></p>
+  </div>
+
+  <div class="container" id="he">
+    <h1 class="aboutme">ABOUT ME</h1>
+    <p><h2 class="obj1"> 
+      Dedicated and results-oriented professional with a strong background in project management. Possesses expertise in strategic planning and team leadership, with a proven ability to deliver complex projects on time and within budget. Highly motivated to contribute to innovative solutions and drive impactful results in a dynamic organization.</h2></p>
+  </div>
+<div class="res-container">
+  <h1 class="res" id="her">SKILLS</h1>
+  <div class="skills-container">
+    <div class="resume">
+      <h1>Hard Skill</h1>
+      <ul>
+        <li>Programming languages (C++, JAVA)</li><br>
+        <li>SQL (Structured Query Language)</li><br>
+        <li>HTML</li><br>
+        <li>CSS</li><br>
+        <li>JavaScript</li><br>
+        <li>React JS</li><br>
+
+      </ul>
+    </div>
+
+    <div class="soft">
+      <h1>Soft Skill</h1>
+      <ul>
+        <li>Observation</li><br>
+        <li>Decision making</li><br>
+        <li>Communication</li><br>
+        <li>Multitasking</li><br>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section id="education" class="content-section">
+  <h2 >Education Background</h2>
+  <div class="education-container">
+    <div class="education-entry">
+      <h3>Bachelor of Engineering in Electronics and Communication Engineering</h3>
+      <p><b>Sri Krishna College of Technology</b>, Coimbatore</p>
+      <p><i>2022 - 2026</i></p>
+    </div>
+  </div>
+</section>
+<section id="certification" class="certification-section">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="certification-grid">
+    <div class="certification-card">
+      <h3 class="cert-title">Introduction to IOT and Embedded System</h3>
+      <!-- <p class="cert-issuer"><b>Institute of Data Science</b></p> -->
+      <p class="cert-date"><i>July 2023</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">HTML,CSS, and Javascript for Web Developers</h3>
+      <!-- <p class="cert-issuer"><b>EC-Council</b></p> -->
+      <p class="cert-date"><i>March 2023</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Introduction to HTML</h3>
+      <!-- <p class="cert-issuer"><b>Amazon Web Services</b></p> -->
+      <p class="cert-date"><i>December 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">How to make invitations using Canva</h3>
+      <!-- <p class="cert-issuer"><b>Scrum Alliance</b></p> -->
+      <p class="cert-date"><i>November 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Business English : Making Presentations</h3>
+      <!-- <p class="cert-issuer"><b>Google</b></p> -->
+      <p class="cert-date"><i>October 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Write Professional Emails in English</h3>
+      <!-- <p class="cert-issuer"><b>Microsoft</b></p> -->
+      <p class="cert-date"><i>September 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Create Your Resume in Canva</h3>
+      <!-- <p class="cert-issuer"><b>Python Institute</b></p> -->
+      <p class="cert-date"><i>August 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Interfacing with the Arduino</h3>
+      <!-- <p class="cert-issuer"><b>Project Management Institute</b></p> -->
+      <p class="cert-date"><i>June 2022</i></p>
+    </div>
+    
+    <div class="certification-card">
+      <h3 class="cert-title">Project Developer</h3>
+      <!-- <p class="cert-issuer"><b>CompTIA</b></p> -->
+      <p class="cert-date"><i>May 2022</i></p>
+    </div>
+    
+    
+  </div>
+</section>
+
+
+<section class="profile-experience" id="projects">
+    <h2 class="section-title">PROJECTS</h2>
+<div class="profile-container">
+ 
+      <div class="profile-experience-item">
+          <div class="profile-year-role">
+              <span class="profile-year">Calendar App</span>
+              <span class="profile-role">DayFLow</span>
+          </div>
+          <div class="profile-details">
+           
+              <p>Dayflow is a sleek and intuitive calendar app built with React.js, designed to streamline your daily scheduling. It offers seamless integration with popular calendar services, providing real-time updates and notifications. The app's responsive design ensures a smooth experience across all devices, while its modular architecture allows for easy customization and scalability. With DayFlow, managing your tasks, events, and reminders has never been easier. Enhance your productivity and stay organized with this powerful and user-friendly calendar solution.</p>
+          </div>
+      </div>
+      
+      <div class="profile-experience-item">
+          <div class="profile-year-role">
+              <span class="profile-year">MernFullStack Developement</span>
+              <span class="profile-role">Internship</span>
+          </div>
+          <div class="profile-details">
+             
+              <p>Our project leverages the MERN stack to deliver a robust and dynamic web application, ensuring a seamless user experience. MongoDB provides scalable data storage, while Express.js and Node.js handle efficient server-side logic. React.js powers a responsive and interactive front-end, creating a highly performant and feature-rich platform. This full-stack solution guarantees optimal performance and scalability for modern web applications.</p>
+          </div>
+      </div>
+  </section>
+  
+</div>
+
+
+  <div class="footer">
+    <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+    <div class="info-container">
+      
+        <p><i class="fas fa-phone icon"></i>+91 63692 83028</p>
+        <p><i class="fas fa-envelope icon"></i><a href="mailto:seshupriya2004@gmail.com">seshupriya2004@gmail.com</a></p>
+        <p><i class="fab fa-github icon"></i><a href="https://github.com/seshu39" target="_blank">GitHub Profile</a></p>
+        <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/seshapriya-ranganathan-b5157a2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " 
+          target="_blank">LinkedIn Profile</a></p>
+        
+    </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seshapriya's Projects Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+        .project {
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px; /* Fixed size for the circular container */
+            height: 300px; /* Fixed size for the circular container */
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            position: relative;
+        }
+        .project-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 15px;
+            text-align: center;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .project:hover .project-info {
+            opacity: 1;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0; /* Light color change on hover */
+        }
+        .project-info h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        .project-info p {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .project-info .technologies {
+            font-size: 0.8em;
+            color: #888;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seshapriya's Projects Portfolio</h1>
+            <p>A curated collection of my work highlighting creativity, innovation, and results.</p>
+        </header>
+        
+        <div class="project">
+            <div class="project-info">
+                <h2>Project Title 1</h2>
+                <p><strong>Overview:</strong> Brief description of the project, its goals, and its impact.</p>
+                <p><strong>Role:</strong> Your role and contributions to the project.</p>
+                <p class="technologies"><strong>Technologies:</strong> Tools and technologies used.</p>
+            </div>
+        </div>
+        
+        <div class="project">
+            <div class="project-info">
+                <h2>Project Title 2</h2>
+                <p><strong>Overview:</strong> Brief description of the project, its goals, and its impact.</p>
+                <p><strong>Role:</strong> Your role and contributions to the project.</p>
+                <p class="technologies"><strong>Technologies:</strong> Tools and technologies used.</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Section</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 800px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .experience, .education {
+        margin-bottom: 40px;
+    }
+    
+    .experience h2, .education h2 {
+        font-size: 1.5em;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .experience-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-left: 2px solid #000;
+        position: relative;
+    }
+    
+    .experience-item::before {
+        content: "";
+        position: absolute;
+        left: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border-radius: 50%;
+    }
+    
+    .year-role {
+        flex: 0 0 150px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    .year {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .role {
+        display: block;
+        color: #555;
+    }
+    
+    .details {
+        flex: 1;
+        padding-left: 20px;
+        border-left: 1px solid #ccc;
+    }
+    
+    .details h3 {
+        margin-top: 0;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rachel Smith</h1>
+        <section class="experience">
+            <h2>EXPERIENCE</h2>
+            <div class="experience-item">
+                <div class="year-role">
+                    <span class="year">Calendar</span>
+                    <span class="role">Dayflow</span>
+                </div>
+                <div class="details">
+                    <h3>COMPANY NAME</h3>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="year-role">
+                    <span class="year">MernStack Developement</span>
+                    <span class="role">Internship</span>
+                </div>
+                <div class="details">
+                    <h3>COMPANY NAME</h3>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+        </section>
+       
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1 class="profile-header">Rachel Smith</h1>
+        <section class="profile-experience">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="profile-experience-item">
+                <div class="profile-year-role">
+                    <span class="profile-year">Calendar App</span>
+                    <span class="profile-role">DayFLow</span>
+                </div>
+                <div class="profile-details">
+                    <h3>COMPANY NAME</h3>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+            
+            <div class="profile-experience-item">
+                <div class="profile-year-role">
+                    <span class="profile-year">MernFullStack Developement</span>
+                    <span class="profile-role">Internship</span>
+                </div>
+                <div class="profile-details">
+                    <h3>COMPANY NAME</h3>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>
